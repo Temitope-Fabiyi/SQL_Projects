@@ -1,5 +1,6 @@
-SELECT 
-	ord.order_id,
+'''sql  
+SELECT   
+	ord.order_id,  
 	CONCAT(cus.first_name,'',cus.last_name) AS 'customers',
 	cus.city,
 	cus.state,
@@ -32,4 +33,5 @@ GROUP BY
 	pro.product_name,
 	cat.category_name,
 	sto.store_name,
-	CONCAT(sta.first_name,'',sta.last_name)
+	CONCAT(sta.first_name,'',sta.last_name)  
+	'''
